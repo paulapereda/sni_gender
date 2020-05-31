@@ -70,7 +70,7 @@ sni <- sni %>%
            gender == "female" ~ "Mujer"),
          area = ifelse(area == "Ciencias Médicas y de la\r\nSalud", "Ciencias Médicas y de la Salud", area)) %>% 
   select(- gender, - gender_aux) %>% 
-  readr::write_rds("data/sni_permanencias.rds")
+  readr::write_rds("data/sni.rds")
 
 
 
